@@ -9,13 +9,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-2">
-            <div className="text-primary">
-              <span className="material-symbols-outlined text-4xl">domain</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight leading-none text-charcoal dark:text-white">JUNUBIN</span>
-              <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary">Sanitation Services</span>
-            </div>
+            <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" className="h-12 w-auto" referrerPolicy="no-referrer" />
           </Link>
           <nav className="hidden md:flex space-x-8">
             <Link to="/" className={`text-sm font-semibold transition-colors ${isActive('/') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary'}`}>Home</Link>

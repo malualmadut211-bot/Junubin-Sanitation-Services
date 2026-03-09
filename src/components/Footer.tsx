@@ -7,11 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
             <div className="flex items-center gap-2 mb-8">
-              <span className="material-symbols-outlined text-primary text-3xl">domain</span>
-              <div className="flex flex-col">
-                <span className="text-xl font-extrabold tracking-tight leading-none">JUNUBIN</span>
-                <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary">Sanitation Services</span>
-              </div>
+              <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" className="h-12 w-auto" referrerPolicy="no-referrer" />
             </div>
             <p className="text-white/60 mb-8 leading-relaxed">Dedicated to raising the standards of sanitation and construction across South Sudan with integrity and innovation.</p>
             <div className="flex gap-4">
