@@ -4,50 +4,43 @@ export default function Home() {
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
       {/* Hero Section */}
-      <section className="relative overflow-hidden pb-20 lg:pb-32 bg-[#fcfcfc] dark:bg-charcoal">
-        <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16">
-          <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
-            <div className="relative z-10 lg:pr-8">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#fce8e8] dark:bg-red-900/30 text-[#e62b2b] text-xs font-bold uppercase tracking-wider mb-6 mt-8 lg:mt-12">
+      <section className="relative overflow-hidden pt-8 lg:pt-12 pb-20 lg:pb-32 bg-white dark:bg-charcoal">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e62b2b] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e62b2b]"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
                 Certified Sanitation Experts
               </div>
-              
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold text-[#2a2a2a] dark:text-white leading-[1.15] mb-6">
-                Building South Sudan's Future — <br className="hidden lg:block" />
-                <span className="text-[#e62b2b]">One Project<br className="hidden lg:block" /> at a Time</span>
+              <h1 className="text-4xl lg:text-6xl font-extrabold text-charcoal dark:text-white leading-tight mb-6">
+                Building South Sudan's Future — <span className="text-primary">One Project at a Time</span>
               </h1>
-              
-              <p className="text-lg xl:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-xl leading-relaxed">
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-xl">
                 Professional sanitation and construction services dedicated to quality, hygiene, and sustainable infrastructure development across the nation.
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/services" className="bg-[#e62b2b] text-white px-8 py-3.5 rounded-lg font-bold text-base hover:bg-red-700 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 text-center">
-                  Our Services
-                </Link>
-                <Link to="/contact" className="bg-white dark:bg-slate-800 text-[#2a2a2a] dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-3.5 rounded-lg font-bold text-base hover:bg-slate-50 dark:hover:bg-slate-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-center">
-                  Contact Us
-                </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link to="/services" className="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all">Our Services</Link>
+                <Link to="/contact" className="bg-background-light dark:bg-slate-800 text-charcoal dark:text-white px-8 py-4 rounded-lg font-bold text-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 transition-all">Contact Us</Link>
               </div>
             </div>
-            
-            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[650px] xl:h-[750px] overflow-hidden rounded-[2rem] lg:rounded-[3rem] shadow-2xl group cursor-pointer">
-              <div 
-                className="absolute transition-transform duration-[1500ms] ease-out group-hover:scale-110"
-                style={{
-                  backgroundImage: `url('https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/1933cce36d9b3ece785197b7fa8c590e1a8189ef/ChatGPT%20Image%20Mar%209%2C%202026%2C%2008_02_55%20PM.png')`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'right center',
-                  width: '200%',
-                  height: '120%',
-                  top: '-10%',
-                  right: '0'
-                }}
-              ></div>
+            <div className="relative">
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img alt="Construction site in South Sudan" className="w-full h-full object-cover" src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/ed2a3730921afe8a1e1da364c119733dbef13468/m..png"/>
+              </div>
+              <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl hidden sm:block border border-primary/10">
+                <div className="flex items-center gap-4">
+                  <div className="bg-primary/20 p-3 rounded-full">
+                    <span className="material-symbols-outlined text-primary text-3xl">verified</span>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-charcoal dark:text-white">100%</div>
+                    <div className="text-xs font-medium text-slate-500 uppercase tracking-tighter">Quality Guaranteed</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
