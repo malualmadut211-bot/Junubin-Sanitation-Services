@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Junubin Sanitation Services</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ef1a21',
+                        'background-light': '#f8f6f6',
+                        'background-dark': '#221011',
+                        charcoal: '#221B23',
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background-light text-slate-900 font-display">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 shadow-sm">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" class="h-12 w-auto" referrerpolicy="no-referrer" />
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-sm font-semibold transition-colors hover:text-primary">Home</a>
+                    <a href="about.html" class="text-sm font-semibold transition-colors hover:text-primary">About</a>
+                    <a href="services.html" class="text-sm font-semibold transition-colors hover:text-primary">Services</a>
+                    <a href="projects.html" class="text-sm font-semibold transition-colors hover:text-primary">Projects</a>
+                    <a href="contact.html" class="text-sm font-semibold transition-colors hover:text-primary">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a class="hidden lg:flex items-center gap-2 text-sm font-bold text-charcoal" href="tel:0911459117">
+                        <span class="material-symbols-outlined text-primary">call</span>
+                        0911 459 117
+                    </a>
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                        Get a Quote
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-4 shadow-lg">
+            <a href="index.html" class="block text-sm font-semibold hover:text-primary">Home</a>
+            <a href="about.html" class="block text-sm font-semibold hover:text-primary">About</a>
+            <a href="services.html" class="block text-sm font-semibold hover:text-primary">Services</a>
+            <a href="projects.html" class="block text-sm font-semibold hover:text-primary">Projects</a>
+            <a href="contact.html" class="block text-sm font-semibold hover:text-primary">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[400px] w-full overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCC0YGn8KB-M_9OTCAkHvU-kEddhO0d_qKYYmWHO-mprpwjTKcTA7I1bOPhgYMADZJAVebIft2AYkgJ9vNQ-7UYxBoBecL3CJqu2vRlTVxuJ3Y_DdQjDv2TXbIMaKPlY6p-_1iAYDbsH04M3wRdgjipIw0mQ51JUGJUZikRC_Ypc11nEj2JbSjXe0iY5C90tvC2nV8uNFX5UFDwx18tq6mQ_uUYijcWPtkFL2H-Cw7oxhfDm1yAJpKzxGU-5viS2rPw5YCjjdjsy_Q')"></div>
+            <div class="relative z-20 flex h-full flex-col items-center justify-center px-6 text-center">
+                <h1 class="max-w-4xl text-4xl font-black tracking-tight text-white md:text-6xl">
+                    Contact Us - We'd Love to Hear from You.
+                </h1>
+                <p class="mt-4 max-w-2xl text-lg text-slate-200">
+                    Professional sanitation and waste management services across Juba. Reach out to us anytime for a cleaner community.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="w-full -mt-16 relative z-30 px-6 lg:px-10">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="flex flex-col gap-4 rounded-xl border border-primary/10 bg-white p-8 shadow-xl">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Location</h3>
+                        <p class="mt-1 text-slate-600">Juba, South Sudan</p>
+                        <p class="text-sm text-slate-500">Hai Jalaba, Main Street</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 rounded-xl border border-primary/10 bg-white p-8 shadow-xl">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined">phone_in_talk</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Phone</h3>
+                        <p class="mt-1 text-xl font-bold text-primary">0911 459 117</p>
+                        <p class="text-sm text-slate-500">Available for emergencies</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 rounded-xl border border-primary/10 bg-white p-8 shadow-xl sm:col-span-2 lg:col-span-1">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined">schedule</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Working Hours</h3>
+                        <p class="mt-1 text-slate-600">24/7 Service Available</p>
+                        <p class="text-sm text-slate-500">Every day of the week</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form & Map Section -->
+        <section class="w-full px-6 py-20 lg:px-10">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+                <!-- Contact Form -->
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight">Send us a Message</h2>
+                        <p class="mt-3 text-slate-600">Fill out the form below and our professional team will get back to you within 24 hours.</p>
+                    </div>
+                    <form class="flex flex-col gap-6" onsubmit="event.preventDefault(); alert('Thank you for your message. We will get back to you soon.');">
+                        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold">Full Name</label>
+                                <input class="rounded-lg border-primary/20 bg-white p-4 focus:border-primary focus:ring-primary" placeholder="John Doe" type="text" required/>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold">Email Address</label>
+                                <input class="rounded-lg border-primary/20 bg-white p-4 focus:border-primary focus:ring-primary" placeholder="john@example.com" type="email" required/>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold">Phone Number</label>
+                                <input class="rounded-lg border-primary/20 bg-white p-4 focus:border-primary focus:ring-primary" placeholder="09XX XXX XXX" type="tel" required/>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold">Service Interest</label>
+                                <select class="rounded-lg border-primary/20 bg-white p-4 focus:border-primary focus:ring-primary">
+                                    <option>Waste Collection</option>
+                                    <option>Industrial Sanitation</option>
+                                    <option>Recycling Services</option>
+                                    <option>Septic Tank Emptying</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-semibold">Message</label>
+                            <textarea class="rounded-lg border-primary/20 bg-white p-4 focus:border-primary focus:ring-primary" placeholder="How can we help you?" rows="4" required></textarea>
+                        </div>
+                        <button class="w-full rounded-lg bg-primary py-4 text-center text-lg font-bold text-white transition-opacity hover:opacity-90" type="submit">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+                <!-- Map -->
+                <div class="h-[500px] overflow-hidden rounded-2xl border border-primary/10 shadow-lg lg:h-auto">
+                    <div class="h-full w-full bg-slate-200 relative">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+                            <img alt="Map showing Juba region" class="absolute inset-0 h-full w-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmxK9ikaSS58hEkMklXPqD4S0CVZS03TF18hYjSz6nqGGtbzm21RC0IjlUK3c-uModtwva7V0gAnD4aejiFOlMNywwBLunZe4ygS3qeZ4AZ9nCCI39Wwd-TJzIGxRiI_R3zBCxgoaLVoT7960_dzV0O6eNL_mEpcSUbd0Tk6-fLoiozqiwjS8Ca2QIstWCUimugHm9rhcKW1DYS86wtog80X9ml2NjGXH4iZMuN2V7TfuRg5H9CoYqJx3TgV_pBX-bVp8FVpWuw6Q"/>
+                            <div class="relative z-10 rounded-xl bg-white/90 p-6 shadow-xl backdrop-blur">
+                                <span class="material-symbols-outlined text-4xl text-primary">location_on</span>
+                                <h4 class="mt-2 text-xl font-bold">Our Headquarters</h4>
+                                <p class="text-slate-600">Juba, South Sudan</p>
+                                <button class="mt-4 text-sm font-bold text-primary underline">Open in Google Maps</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-charcoal pt-24 pb-12">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-2 mb-8">
+                        <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" class="h-12 w-auto" referrerpolicy="no-referrer" />
+                    </div>
+                    <p class="text-slate-600 mb-8 leading-relaxed">Dedicated to raising the standards of sanitation and construction across South Sudan with integrity and innovation.</p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">public</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">alternate_email</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">chat</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-600">
+                        <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="projects.html">Project Gallery</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="contact.html">Contact Support</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Our Services</h4>
+                    <ul class="space-y-4 text-slate-600">
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Biodigester Installation</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">General Construction</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Industrial Cleaning</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Plumbing Maintenance</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Emergency Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Contact Us</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            <span>Main Road, Juba,<br/>South Sudan</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <span>0911 459 117</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            <span>info@junubinss.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>© 2024 Junubin Sanitation Services. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-primary transition-colors" href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

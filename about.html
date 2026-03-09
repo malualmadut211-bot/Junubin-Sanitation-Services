@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Junubin Sanitation Services</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ef1a21',
+                        'background-light': '#f8f6f6',
+                        'background-dark': '#221011',
+                        charcoal: '#221B23',
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background-light text-slate-900 font-display">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 shadow-sm">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" class="h-12 w-auto" referrerpolicy="no-referrer" />
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-sm font-semibold transition-colors hover:text-primary">Home</a>
+                    <a href="about.html" class="text-sm font-semibold transition-colors hover:text-primary">About</a>
+                    <a href="services.html" class="text-sm font-semibold transition-colors hover:text-primary">Services</a>
+                    <a href="projects.html" class="text-sm font-semibold transition-colors hover:text-primary">Projects</a>
+                    <a href="contact.html" class="text-sm font-semibold transition-colors hover:text-primary">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a class="hidden lg:flex items-center gap-2 text-sm font-bold text-charcoal" href="tel:0911459117">
+                        <span class="material-symbols-outlined text-primary">call</span>
+                        0911 459 117
+                    </a>
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                        Get a Quote
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-4 shadow-lg">
+            <a href="index.html" class="block text-sm font-semibold hover:text-primary">Home</a>
+            <a href="about.html" class="block text-sm font-semibold hover:text-primary">About</a>
+            <a href="services.html" class="block text-sm font-semibold hover:text-primary">Services</a>
+            <a href="projects.html" class="block text-sm font-semibold hover:text-primary">Projects</a>
+            <a href="contact.html" class="block text-sm font-semibold hover:text-primary">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Banner -->
+        <section class="relative w-full py-20 lg:py-32 overflow-hidden bg-charcoal">
+            <div class="absolute inset-0 opacity-40">
+                <img class="w-full h-full object-cover" alt="Modern sanitation facility with professional workers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn9g52zi0lKgt0WiHhDaTsZLr_7xiZMeQLY772JJcgIjbcCSoOEnujJfUEsD0GRZxMPIuaCaO_tBjyzkgMbBNsfQdh2IWyLb0IKJRnVfiXhtGPl9hjIl9QLFqfBggLPCsaLBvfktqZ5Xr-ZEiGPxrBzsPSltpHmCQ4IuHwNhyIeF1ShS9ncEevEpO4CSctDcmNfc8V77cgsOv7l9RuRAk9u8zhgwq2242j7NMfT5dh2OHHFtDIbb7ny6WDdZTdopo_xldTYMJU5-Y"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent"></div>
+            </div>
+            <div class="relative w-full px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
+                        About Junubin Sanitation Services - <span class="text-primary">Building with Purpose.</span> Serving with Pride.
+                    </h1>
+                    <p class="text-slate-300 text-lg md:text-xl leading-relaxed mb-8">
+                        Dedicated to providing top-tier sanitation solutions across the region with an unwavering commitment to public health and environmental excellence.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#story" class="bg-primary hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold transition-all flex items-center gap-2">
+                            Our Story <span class="material-symbols-outlined">arrow_downward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="story" class="py-20 bg-white">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-auto aspect-[4/3] object-cover" alt="Professional sanitation team standing together smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7gxng13CfbgDeroUpz4cLuUqStvANOo1sIy1p3vbRDYkq9o5rd4mCdyYdRCTUaVw0NoYmjPQTumYXelmmspp9DJKVEJXaM0wzvNkzZ--WapK3WaF1euqAS4qTyFkD4WuWGloVi0lV_XgE9qVsGE2eBFsKDflCJxZ1UoSg4umNSiMiX67wvD-ZqlgeJ2QrNadobvLGrnbSMEuQpzWtXJNjKTLWM-w1ywPnIch521zY674pcjXlieyfgQ4xbDQQmSlb_JIbzwp9QH8"/>
+                            <div class="absolute bottom-6 right-6 bg-primary p-6 rounded-xl text-white shadow-xl">
+                                <p class="text-4xl font-bold">15+</p>
+                                <p class="text-sm font-medium opacity-90 uppercase tracking-wider">Years of Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 space-y-6">
+                        <div class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded">Our Legacy</div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-charcoal">A Legacy of Service and Integrity</h2>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            Founded on the principles of integrity and hard work, Junubin Sanitation Services has grown from a local initiative into a leading provider of waste management and sanitation solutions. 
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            Our journey is defined by our dedication to the communities we serve. We started with a single truck and a vision to clean the city, and today we employ hundreds of professionals across multiple regions, utilizing state-of-the-art technology to ensure a cleaner, healthier future for everyone.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary">verified</span>
+                                <span class="font-semibold text-charcoal">Certified Experts</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary">eco</span>
+                                <span class="font-semibold text-charcoal">Eco-Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Vision Values -->
+        <section class="py-20 bg-slate-50">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold text-charcoal mb-4">The Pillars of Our Success</h2>
+                    <p class="text-slate-600">Guided by our core principles, we strive to exceed expectations in every project we undertake.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-primary hover:shadow-xl transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">flag</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-charcoal mb-4">Our Mission</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            To provide sustainable, high-quality sanitation services that promote public health and protect our environment through innovation and community engagement.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-primary hover:shadow-xl transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">visibility</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-charcoal mb-4">Our Vision</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            To be the premier leader in sanitation across the continent, setting global benchmarks for operational excellence and environmental stewardship.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-primary hover:shadow-xl transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">favorite</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-charcoal mb-4">Our Values</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Integrity, Safety, Innovation, and Service. We believe in doing the right thing for our clients, our employees, and the planet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet The Team -->
+        <section class="py-20 bg-white">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                    <div class="max-w-2xl">
+                        <h2 class="text-3xl font-bold text-charcoal mb-4">Meet Our Leadership Team</h2>
+                        <p class="text-slate-600">The experienced minds behind Junubin's growth and commitment to excellence.</p>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl mb-4 bg-slate-100 aspect-[3/4]">
+                            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="CEO in professional suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQTuaGJ0BCnvr4P_lU3s8Ivp-HRl7mwSKLIkskhGiQyhnhMS5VMmdpBfhftos6ubY8yvtH3mEjNODNKS9Cw18EtIzCocCACHBK0s0tlE_Wua5lTucRng4-OENo-_FdhnFyfeS6tWGGlvbRXgB3y9OHdIGYIN342P4YtpXVnnTMpHWLJR2b54qYvA4SuScYKJHhxEMoz8phc1Ly2qhTpJj85T4kCDP32LX1tPfrl0aJ6QFvMsnhyWXYS1sT87Bu8X_Je9Tb9wBQxYg"/>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal">Dr. John Deng</h4>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">Founder & CEO</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">Over 20 years of experience in public infrastructure management.</p>
+                    </div>
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl mb-4 bg-slate-100 aspect-[3/4]">
+                            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Female COO in corporate attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDS19sVA46f3WmGzEOlrS4fuE3aGk8G0iIon3vOD5begnybJjNta_laByVEftO1Ek1TflIs-5vEZTSrpfU0lagYHO2QRM2e0nF15F3I_PEGzBgdmGLu34I-eFAE6qKOqYQkK2ZyK2NcfB3hEeNhCtxhkAcezDICBNfApTH7vPEv6CRw0zFn8J7GhAbWPyM2wFI-zSFLBp20AlTC7h74c-QXDsaBTz1rBhfgxvQT2FlpwFifNGDerkz095QkZv9RHMXgkJny7t_8dE"/>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal">Sarah Alier</h4>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">Chief Operations Officer</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">Driving efficiency and safety standards across all operations.</p>
+                    </div>
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl mb-4 bg-slate-100 aspect-[3/4]">
+                            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Technical director smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeP800aUwt1lZwf4OhDXkgBbrPdbiYm7s16vyASXUO8r-46-ICzSdgiH12JWear-RexhluZP8liaF-L5Qm-oZoTQMiaJmkjNJIa-D5QJDPp4CMVQ_HK7BjU0FLKqUn4CUQUA4dDSmiouIYal14t0L7iP4hKhMTvIPxtUQ6ZMH6C2OUhyVMDAcvGSXhJPexNjDq2pbsyXkEcn_0e5X25-_oCugGsQHVy4yFUTqAUUOHqdU8gT-9M_ftPVOaYzFZdTGh0cGFMerEgkA"/>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal">Peter Lado</h4>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">Technical Director</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">Expert in modern waste treatment and recycling technologies.</p>
+                    </div>
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl mb-4 bg-slate-100 aspect-[3/4]">
+                            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Environmental scientist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzhJVBDzoFtlgp5_rlnISRfDkzdZSUkcONt9e7VZQWuZqfwtHoDRPg92dLSc0cMGGaBYyN_s0Kp1UY0FGcDSEgDRubWEA6XCcOAFOAm2h8_X0e0UV6cpstu1rgI4sVP9Kcrlb9TO5BuDgdERbevYw1DTtzw0kCq-LdBxGsH4TLtjXhNCrHvHH5tqAlKbLVak0HDuXu03otKBpZ1Jgi39hn0Ql3XrBSc76Ujo496UjgJj6tk1vhQjuTC4azEglWhusMHdz1t_Tv3co"/>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal">Grace Nyibol</h4>
+                        <p class="text-primary text-sm font-semibold uppercase tracking-wider mb-2">Lead Environmentalist</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">Ensuring all our processes exceed environmental protection laws.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="py-12 bg-primary">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8 text-white">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-3xl font-bold mb-2">Ready to improve your sanitation standards?</h2>
+                        <p class="text-white/80">Get in touch with our team for a customized service plan today.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                        <a href="contact.html" class="bg-charcoal text-white px-8 py-4 rounded-lg font-bold hover:bg-slate-800 transition-all text-center">Contact Us</a>
+                        <a href="services.html" class="bg-white text-primary px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition-all text-center">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-charcoal pt-24 pb-12">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-2 mb-8">
+                        <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" class="h-12 w-auto" referrerpolicy="no-referrer" />
+                    </div>
+                    <p class="text-slate-600 mb-8 leading-relaxed">Dedicated to raising the standards of sanitation and construction across South Sudan with integrity and innovation.</p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">public</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">alternate_email</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">chat</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-600">
+                        <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="projects.html">Project Gallery</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="contact.html">Contact Support</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Our Services</h4>
+                    <ul class="space-y-4 text-slate-600">
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Biodigester Installation</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">General Construction</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Industrial Cleaning</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Plumbing Maintenance</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Emergency Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Contact Us</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            <span>Main Road, Juba,<br/>South Sudan</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <span>0911 459 117</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            <span>info@junubinss.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>© 2024 Junubin Sanitation Services. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-primary transition-colors" href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

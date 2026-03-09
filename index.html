@@ -1,15 +1,356 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junubin Sanitation Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ef1a21',
+                        'background-light': '#f8f6f6',
+                        'background-dark': '#221011',
+                        charcoal: '#221B23',
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background-light text-slate-900 font-display">
 
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 shadow-sm">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" class="h-12 w-auto" referrerpolicy="no-referrer" />
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-sm font-semibold transition-colors hover:text-primary">Home</a>
+                    <a href="about.html" class="text-sm font-semibold transition-colors hover:text-primary">About</a>
+                    <a href="services.html" class="text-sm font-semibold transition-colors hover:text-primary">Services</a>
+                    <a href="projects.html" class="text-sm font-semibold transition-colors hover:text-primary">Projects</a>
+                    <a href="contact.html" class="text-sm font-semibold transition-colors hover:text-primary">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a class="hidden lg:flex items-center gap-2 text-sm font-bold text-charcoal" href="tel:0911459117">
+                        <span class="material-symbols-outlined text-primary">call</span>
+                        0911 459 117
+                    </a>
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                        Get a Quote
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-4 shadow-lg">
+            <a href="index.html" class="block text-sm font-semibold hover:text-primary">Home</a>
+            <a href="about.html" class="block text-sm font-semibold hover:text-primary">About</a>
+            <a href="services.html" class="block text-sm font-semibold hover:text-primary">Services</a>
+            <a href="projects.html" class="block text-sm font-semibold hover:text-primary">Projects</a>
+            <a href="contact.html" class="block text-sm font-semibold hover:text-primary">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden pt-8 lg:pt-12 pb-20 lg:pb-32 bg-white">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            Certified Sanitation Experts
+                        </div>
+                        <h1 class="text-4xl lg:text-6xl font-extrabold text-charcoal leading-tight mb-6">
+                            Building South Sudan's Future — <span class="text-primary">One Project at a Time</span>
+                        </h1>
+                        <p class="text-lg text-slate-600 mb-8 max-w-xl">
+                            Professional sanitation and construction services dedicated to quality, hygiene, and sustainable infrastructure development across the nation.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="services.html" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all">Our Services</a>
+                            <a href="contact.html" class="bg-background-light text-charcoal px-8 py-4 rounded-lg font-bold text-lg border border-slate-200 hover:bg-slate-50 transition-all">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                            <img alt="Construction site in South Sudan" class="w-full h-full object-cover" src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/ed2a3730921afe8a1e1da364c119733dbef13468/m..png"/>
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl hidden sm:block border border-primary/10">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-primary/20 p-3 rounded-full">
+                                    <span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-charcoal">100%</div>
+                                    <div class="text-xs font-medium text-slate-500 uppercase tracking-tighter">Quality Guaranteed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <div class="bg-charcoal py-12 relative z-20">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-1">500+</div>
+                        <div class="text-sm text-slate-400 uppercase tracking-widest font-medium">Projects</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-1">50+</div>
+                        <div class="text-sm text-slate-400 uppercase tracking-widest font-medium">Workers</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-1">10+</div>
+                        <div class="text-sm text-slate-400 uppercase tracking-widest font-medium">Years</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-1">100%</div>
+                        <div class="text-sm text-slate-400 uppercase tracking-widest font-medium">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Preview -->
+        <section class="py-24 bg-background-light" id="about">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="space-y-4 pt-12">
+                            <img alt="Architectural design" class="rounded-xl shadow-lg w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuekDFbotFEv0FIeAVuiOsG3D5N0UrI2-1tr8Nd19i8Wmngn6yDxfYGWXyN_6cwCVri1XnP1fajgOjeQgoGnC1VF8BnD0VqGD6d54Lrfnjmsok3QK1-SWmeTK9Nz9DM9mOTxGp37hILtIRwYfV1ncRbxUrYlXlnSdUnC05V5l9FkUvUpvQ6Zyzw0tQ7fxP81yka1Qtr2ysQ9mcGBseuiC45XQovZvpTQSRvkWSfjcq1eA-gqraF-puQmTOwKi3W5Nk8sESvYFdSnc"/>
+                            <img alt="Sanitation engineering" class="rounded-xl shadow-lg w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzoVpk0-re6kyZ3W5iX9jF2fj6JR0fqAA5Elg8WQu-f39kTZiTwhm-u1eCt4NvIBP9cIr6xf766WxKdIQ1mfZz9pLCXFVNiGqY5fOBZaQctVaMQAiRQuGWI4fMruVeOQ_ut0GHMdvjM0QRLeZh7F6yfFktP4WcXZq1gfgoiZNGPi2nHyMDhvSa8B5xwl4D4noKVlezaNg4tTO6KvRFzNkuZKPwmdV6eyUl3m4Elh8vhiJXG9WdN7tB_Hz50KKFx5nns33s2mQq45g"/>
+                        </div>
+                        <div class="space-y-4">
+                            <img alt="Worker safety" class="rounded-xl shadow-lg w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFrMwgAPJ35OGeXdbnW6j5hWErL_ishLvNnt973uZVDWHTnVH4Gp30sWa0YWGhdiEW8wCSAVvMQigkrD83kl-Fz4PTaPZqU1_vtNIMSBBPRNo3-vw58F2y7ouHa4Acexwd8M3OTjtvys07ERH3NIxlPgssnzb3qEG-IL1aOXNkMkzrrjmW_IbiDYqHuyW3sH5pz3GFZWP0dvmfwdaD0G6t0vIQWUYjr11nnGQp4W3NoQqbKU4NXHLDS3EFxo8NVbqHYpmDqo1f6h8"/>
+                            <img alt="Building site" class="rounded-xl shadow-lg w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo9L0Mk0JXJvnpnFZQfsv7T4EmyKXCpiQidgAVBhrtP-r4YVgmAGRlMmBiI73OpiqhfWWxUTSbywm73aDgxZUCabcq1Irtu-i3MuRhdV1QrD7JqKd5DQWR9ItFH1KLkgpjA8sQlfotqBM8zi0hN0YsVBJt1-xOkxAo31jYaZl4-cBh512evEoSXvbzCsBpx8TeriRA1IgvB-9nEqiaw-JXCL_tqZTKuIyq95PK_AuT38eSZETH_REg91efaPjw1T-iGf4lKt1W8W8"/>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-primary text-sm font-bold tracking-[0.3em] uppercase mb-4">Who We Are</h2>
+                        <h3 class="text-3xl lg:text-4xl font-bold text-charcoal mb-6">Leading the Way in Regional Infrastructure & Hygiene</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Junubin Sanitation Services is more than just a service provider; we are partners in the progress of South Sudan. With a deep commitment to excellence and community welfare, we provide world-class sanitation and construction solutions tailored to local needs.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span class="font-semibold text-charcoal text-sm lg:text-base">Locally Owned & Operated Professional Teams</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span class="font-semibold text-charcoal text-sm lg:text-base">Eco-friendly Sanitation Technologies</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span class="font-semibold text-charcoal text-sm lg:text-base">Strict Adherence to Safety Standards</span>
+                            </li>
+                        </ul>
+                        <a href="about.html" class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all">
+                            Learn More About Our Journey <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-24 bg-white" id="services">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-primary text-sm font-bold tracking-[0.3em] uppercase mb-4">Our Services</h2>
+                    <h3 class="text-3xl lg:text-4xl font-bold text-charcoal">Comprehensive Solutions</h3>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group bg-background-light p-8 rounded-xl hover:bg-primary transition-all duration-300">
+                        <div class="bg-primary/10 group-hover:bg-white/20 p-4 rounded-lg inline-block mb-6">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">construction</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal group-hover:text-white mb-4">General Construction</h4>
+                        <p class="text-slate-600 group-hover:text-white/80 text-sm leading-relaxed mb-6">High-quality residential and commercial building projects from foundation to finish.</p>
+                        <a class="text-primary group-hover:text-white font-bold text-sm inline-flex items-center gap-2" href="services.html">Details <span class="material-symbols-outlined text-sm">north_east</span></a>
+                    </div>
+                    <div class="group bg-background-light p-8 rounded-xl hover:bg-primary transition-all duration-300">
+                        <div class="bg-primary/10 group-hover:bg-white/20 p-4 rounded-lg inline-block mb-6">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">biotech</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal group-hover:text-white mb-4">Biodigester Systems</h4>
+                        <p class="text-slate-600 group-hover:text-white/80 text-sm leading-relaxed mb-6">Modern, eco-friendly waste management solutions for sustainable living environments.</p>
+                        <a class="text-primary group-hover:text-white font-bold text-sm inline-flex items-center gap-2" href="services.html">Details <span class="material-symbols-outlined text-sm">north_east</span></a>
+                    </div>
+                    <div class="group bg-background-light p-8 rounded-xl hover:bg-primary transition-all duration-300">
+                        <div class="bg-primary/10 group-hover:bg-white/20 p-4 rounded-lg inline-block mb-6">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">plumbing</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal group-hover:text-white mb-4">Expert Plumbing</h4>
+                        <p class="text-slate-600 group-hover:text-white/80 text-sm leading-relaxed mb-6">Professional installation and maintenance of water supply and drainage systems.</p>
+                        <a class="text-primary group-hover:text-white font-bold text-sm inline-flex items-center gap-2" href="services.html">Details <span class="material-symbols-outlined text-sm">north_east</span></a>
+                    </div>
+                    <div class="group bg-background-light p-8 rounded-xl hover:bg-primary transition-all duration-300">
+                        <div class="bg-primary/10 group-hover:bg-white/20 p-4 rounded-lg inline-block mb-6">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">cleaning_services</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-charcoal group-hover:text-white mb-4">Cleaning Services</h4>
+                        <p class="text-slate-600 group-hover:text-white/80 text-sm leading-relaxed mb-6">Industrial, commercial, and post-construction deep cleaning services.</p>
+                        <a class="text-primary group-hover:text-white font-bold text-sm inline-flex items-center gap-2" href="services.html">Details <span class="material-symbols-outlined text-sm">north_east</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-24 bg-background-light">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-primary text-sm font-bold tracking-[0.3em] uppercase mb-4">Why Choose Us</h2>
+                        <h3 class="text-3xl lg:text-4xl font-bold text-charcoal mb-8">Committed to Excellence, 24/7</h3>
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-md border border-primary/5">
+                                    <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-charcoal mb-2">Expert Team</h4>
+                                    <p class="text-slate-600">Our professionals are highly trained and experienced in modern construction and sanitation standards.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-md border border-primary/5">
+                                    <span class="material-symbols-outlined text-primary text-3xl">payments</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-charcoal mb-2">Fair Pricing</h4>
+                                    <p class="text-slate-600">We offer competitive rates without compromising on the quality of materials or workmanship.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-md border border-primary/5">
+                                    <span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-charcoal mb-2">24/7 Availability</h4>
+                                    <p class="text-slate-600">Our emergency plumbing and cleaning services are available around the clock to serve you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative bg-primary rounded-3xl p-1">
+                        <img alt="Technical drawing" class="rounded-3xl w-full h-[500px] object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1zAe-fplDPy_O5TN80qpkbShshCSJXpDqwqaREhEPxGVom2lvu3IkAGXF6cMRHRDvNWw4l_oS9bmG0fDvilLdLGhoE_gMrK-I5ZxDKSNGLzP__PHL-seDPQZPLerToSXONPZBFMr9oIJVFLOytM6k7cQjOmBpQvHP9S-9BKydUgyl2ZAtHx38ox83KcLk-648HzQ0m-34b5uIbikYAhWo1g5R9iH7Pt9cgxjGZ5R2IY-hKe15FLYuQaCxkVmcwPQYMtag0cz9_Vs"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="py-12 bg-primary">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-white mb-2">Ready to start your next project?</h2>
+                        <p class="text-white/80 font-medium">Get a free consultation and quote from our experts today.</p>
+                    </div>
+                    <a href="contact.html" class="bg-white text-primary px-10 py-4 rounded-xl font-extrabold text-lg shadow-xl hover:scale-105 transition-transform">
+                        Contact Our Team Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-charcoal pt-24 pb-12">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-2 mb-8">
+                        <img src="https://raw.githubusercontent.com/malualmadut211-bot/ai-studio-media/a87e1470c28e32ab11a349878884b9c215afb1cf/ju.png" alt="Junubin Sanitation Services Logo" class="h-12 w-auto" referrerpolicy="no-referrer" />
+                    </div>
+                    <p class="text-slate-600 mb-8 leading-relaxed">Dedicated to raising the standards of sanitation and construction across South Sudan with integrity and innovation.</p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">public</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">alternate_email</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">chat</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-600">
+                        <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="projects.html">Project Gallery</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="contact.html">Contact Support</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Our Services</h4>
+                    <ul class="space-y-4 text-slate-600">
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Biodigester Installation</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">General Construction</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Industrial Cleaning</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Plumbing Maintenance</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Emergency Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-primary">Contact Us</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            <span>Main Road, Juba,<br/>South Sudan</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <span>0911 459 117</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            <span>info@junubinss.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>© 2024 Junubin Sanitation Services. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-primary transition-colors" href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
