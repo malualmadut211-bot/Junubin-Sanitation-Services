@@ -6,7 +6,7 @@ export default function Projects() {
       {/* Hero Section */}
       <section className="relative h-[500px] w-full overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: 'linear-gradient(rgba(34, 16, 17, 0.7) 0%, rgba(34, 16, 17, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3_eRRXUF0gvDzJRRRHwOYinsatmC3MYTLIRHSuVSqTf_fooHkQ-HvXxrDtm6SV7DSxFO_ZG9IOHRkj-9rQeSVEx11jQ4djJd7N1ryguXz6lj35JEkhQKdr4Oo7sVjCXZ3R5-TC88J0YO-0zm2GjhF0gh6MvxWrRp38cNcMkDKh8aJJYP04EntqlufelVMbOmsOeVehFDutm43f-A-sUiVoKPXHPKsCGbxI4QqoPbXhZIFfvijlK9e5-diqekZJ5fa1W8MPNb_t9w")'}}></div>
-        <div className="relative mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-6 text-center">
+        <div className="relative w-full flex h-full flex-col items-center justify-center px-6 text-center">
           <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight text-white md:text-6xl">
             Our Projects - Quality Work That Stands the Test of Time.
           </h1>
@@ -26,7 +26,7 @@ export default function Projects() {
 
       {/* Statistics Bar */}
       <section className="bg-white py-12 dark:bg-slate-900/50 border-y border-primary/5">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="w-full px-6">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div className="flex flex-col items-center text-center">
               <span className="text-4xl font-black text-primary">250+</span>
@@ -49,7 +49,7 @@ export default function Projects() {
       </section>
 
       {/* Filter and Gallery */}
-      <section className="mx-auto max-w-7xl px-6 py-20">
+      <section className="w-full px-6 py-20">
         {/* Filter Tabs */}
         <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
           <button className="rounded-full bg-primary px-6 py-2 text-sm font-bold text-white shadow-md shadow-primary/20">All Projects</button>
@@ -121,7 +121,7 @@ export default function Projects() {
       </section>
 
       {/* CTA Section */}
-      <section className="mx-auto max-w-7xl px-6 pb-20">
+      <section className="w-full px-6 pb-20">
         <div className="relative overflow-hidden rounded-3xl bg-primary px-8 py-16 text-center text-white md:px-16">
           <div className="absolute top-0 right-0 -mr-20 -mt-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
           <div className="absolute bottom-0 left-0 -ml-20 -mb-20 h-64 w-64 rounded-full bg-black/10 blur-3xl"></div>

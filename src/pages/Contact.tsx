@@ -18,7 +18,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="mx-auto -mt-16 relative z-30 max-w-7xl px-6 lg:px-10">
+      <section className="w-full -mt-16 relative z-30 px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col gap-4 rounded-xl border border-primary/10 bg-white p-8 shadow-xl dark:bg-slate-800">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -54,7 +54,7 @@ export default function Contact() {
       </section>
 
       {/* Form & Map Section */}
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+      <section className="w-full px-6 py-20 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Contact Form */}
           <div className="flex flex-col gap-8">

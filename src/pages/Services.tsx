@@ -23,7 +23,7 @@ export default function Services() {
 
       {/* Services Grid */}
       <section className="py-24 bg-white dark:bg-background-dark" id="services">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           {/* General Construction */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-32">
             <div className="lg:w-1/2 order-2 lg:order-1">
@@ -146,7 +146,7 @@ export default function Services() {
 
       {/* How We Work */}
       <section className="py-24 bg-background-light dark:bg-slate-900/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-4">How We Work</h2>
             <div className="w-24 h-1.5 bg-primary mx-auto"></div>
@@ -186,7 +186,7 @@ export default function Services() {
 
       {/* CTA Banner */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="bg-primary rounded-[2rem] p-10 md:p-20 text-center text-white relative overflow-hidden">
             <h2 className="text-3xl md:text-5xl font-black mb-6 relative z-10">Ready to start your next project?</h2>
             <p className="text-white/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto relative z-10">

@@ -9,7 +9,7 @@ export default function About() {
           <img className="w-full h-full object-cover" alt="Modern sanitation facility with professional workers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn9g52zi0lKgt0WiHhDaTsZLr_7xiZMeQLY772JJcgIjbcCSoOEnujJfUEsD0GRZxMPIuaCaO_tBjyzkgMbBNsfQdh2IWyLb0IKJRnVfiXhtGPl9hjIl9QLFqfBggLPCsaLBvfktqZ5Xr-ZEiGPxrBzsPSltpHmCQ4IuHwNhyIeF1ShS9ncEevEpO4CSctDcmNfc8V77cgsOv7l9RuRAk9u8zhgwq2242j7NMfT5dh2OHHFtDIbb7ny6WDdZTdopo_xldTYMJU5-Y"/>
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative w-full px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
               About Junubin Sanitation Services - <span className="text-primary">Building with Purpose.</span> Serving with Pride.
@@ -28,7 +28,7 @@ export default function About() {
 
       {/* Our Story Section */}
       <section className="py-20 bg-white dark:bg-background-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -65,7 +65,7 @@ export default function About() {
 
       {/* Mission Vision Values */}
       <section className="py-20 bg-slate-50 dark:bg-slate-900/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-charcoal dark:text-white mb-4">The Pillars of Our Success</h2>
             <p className="text-slate-600 dark:text-slate-400">Guided by our core principles, we strive to exceed expectations in every project we undertake.</p>
@@ -104,7 +104,7 @@ export default function About() {
 
       {/* Meet The Team */}
       <section className="py-20 bg-white dark:bg-background-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
             <div className="max-w-2xl">
               <h2 className="text-3xl font-bold text-charcoal dark:text-white mb-4">Meet Our Leadership Team</h2>
@@ -153,7 +153,7 @@ export default function About() {
 
       {/* Certifications & Partners */}
       <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <p className="text-center text-slate-500 dark:text-slate-400 text-sm font-bold uppercase tracking-[0.2em] mb-12">Our Certified Partners & Affiliations</p>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 dark:opacity-40 grayscale hover:grayscale-0 transition-all">
             <div className="h-12 w-32 bg-slate-400/20 rounded-md flex items-center justify-center font-bold text-slate-500">ISO 9001</div>
@@ -167,7 +167,7 @@ export default function About() {
 
       {/* CTA Banner */}
       <section className="py-12 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white">
             <div className="text-center md:text-left">
               <h2 className="text-3xl font-bold mb-2">Ready to improve your sanitation standards?</h2>
